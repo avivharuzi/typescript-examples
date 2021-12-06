@@ -23,14 +23,22 @@ npm i -D typescript
 ```shell
 npx tsc
 ```
-4. Create `tsconfig.json` which configure how typescript will behave and compile the files
+4. Compile typescript files in watch mode
+```shell
+npx tsc --watch
+```
+5. Create `tsconfig.json` which configure how typescript will behave and compile the files
 ```shell
 npx tsc --init
 ```
-5. You can also run directly typescript file with [ts-node](https://github.com/TypeStrong/ts-node) package
+6. You can also run directly typescript file with [ts-node](https://github.com/TypeStrong/ts-node) package
 ```shell
 npm i -D ts-node
 ts-node index.ts
+```
+7. If you are going to use `importHelpers` option in `tsconfig.json` file you are needing to install [tslib](https://github.com/Microsoft/tslib) package
+```shell
+npm i tslib
 ```
 
 ## Useful Resources
@@ -40,6 +48,10 @@ ts-node index.ts
 [TypeScript Book](https://basarat.gitbook.io/typescript)
 
 [TypeScript Execution](https://typestrong.org/ts-node)
+
+[TSConfig Reference](https://www.typescriptlang.org/tsconfig)
+
+[TSConfig Bases Recommendation](https://github.com/tsconfig/bases)
 
 [JSON to TypeScript](https://transform.tools/json-to-typescript)
 
