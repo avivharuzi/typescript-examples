@@ -24,8 +24,8 @@
     "forceConsistentCasingInFileNames": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["ES2017", "DOM"],
-    "target": "ES2015",
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
     "skipLibCheck": true,
     "skipDefaultLibCheck": true
   },
