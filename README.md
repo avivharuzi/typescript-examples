@@ -43,16 +43,16 @@ npm i tslib
 
 ## TypeScript Common Types
 
-| Type                       | Explanation                                 |
-|----------------------------|---------------------------------------------|
-| `Number` or `number`       | a double-precision IEEE 754 floating point. |
-| `String` or `string`       | an immutable UTF-16 string.                 |
-| `BigInt` or `bigint`       | integers in the arbitrary precision format. |
-| `Boolean` or `boolean`     | true and false.                             |
-| `Symbol` or `symbol`       | a unique value usually used as a key.       |
-| `Null` or `null`           | equivalent to the unit type.                |
-| `Undefined` or `undefined` | also equivalent to the unit type.           |
-| `Object` or `object`       | similar to records.                         |
+| Type                   | Explanation                                 |
+|------------------------|---------------------------------------------|
+| `Number` or `number`   | a double-precision IEEE 754 floating point. |
+| `String` or `string`   | an immutable UTF-16 string.                 |
+| `bigint`               | integers in the arbitrary precision format. |
+| `Boolean` or `boolean` | true and false.                             |
+| `Symbol` or `symbol`   | a unique value usually used as a key.       |
+| `null`                 | equivalent to the unit type.                |
+| `undefined`            | also equivalent to the unit type.           |
+| `Object` or `object`   | similar to records.                         |
 
 ## Other Important TypeScript Types
 
@@ -79,7 +79,6 @@ npm i tslib
 | `function`  | typeof f === "function"          |
 | `array`     | Array.isArray(a)                 |
 | `object`    | typeof o === "object"            |
-
 
 ## Useful Resources
 
