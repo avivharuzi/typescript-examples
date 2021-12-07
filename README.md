@@ -41,7 +41,49 @@ ts-node index.ts
 npm i tslib
 ```
 
+## TypeScript Common Types
+
+| Type                       | Explanation                                 |
+|----------------------------|---------------------------------------------|
+| `Number` or `number`       | a double-precision IEEE 754 floating point. |
+| `String` or `string`       | an immutable UTF-16 string.                 |
+| `BigInt` or `bigint`       | integers in the arbitrary precision format. |
+| `Boolean` or `boolean`     | true and false.                             |
+| `Symbol` or `symbol`       | a unique value usually used as a key.       |
+| `Null` or `null`           | equivalent to the unit type.                |
+| `Undefined` or `undefined` | also equivalent to the unit type.           |
+| `Object` or `object`       | similar to records.                         |
+
+## Other Important TypeScript Types
+
+| Type             | Explanation                                               |
+|------------------|-----------------------------------------------------------|
+| `unknown`        | the top type.                                             |
+| `never`          | the bottom type.                                          |
+| `object literal` | eg { property: Type }                                     |
+| `void`           | a subtype of undefined intended for use as a return type. |
+| `T[]`            | mutable arrays, also written Array                        |
+| `[T, T]`         | tuples, which are fixed-length but mutable                |
+| `(t: T) => U`    | functions                                                 |                                              
+
+## TypeScript Predictions
+
+| Typescript  | Predictions                      |
+|-------------|----------------------------------|
+| `string`    | typeof s === "string"            |
+| `number`    | typeof n === "number"            |
+| `bigint`    | typeof m === "bigint"            |
+| `boolean`   | typeof b === "boolean"           |
+| `symbol`    | typeof g === "symbol"            |
+| `undefined` | typeof undefined === "undefined" |
+| `function`  | typeof f === "function"          |
+| `array`     | Array.isArray(a)                 |
+| `object`    | typeof o === "object"            |
+
+
 ## Useful Resources
+
+[JavaScript Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 [TypeScript Documentation](https://www.typescriptlang.org/docs)
 
