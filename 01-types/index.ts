@@ -256,4 +256,4 @@ const anotherHundred: bigint = 100n; // type: bigint
  * symbol
  */
 const myFirstSymbol = Symbol('myFirstSymbol'); // type: symbol
-const mySecondSymbol: symbol = Symbol('mySecondSymbol');
+const mySecondSymbol: symbol = Symbol('mySecondSymbol'); // type: symbol
