@@ -43,28 +43,22 @@ npm i tslib
 
 ## TypeScript Common Types
 
-| Type                   | Explanation                                 |
-|------------------------|---------------------------------------------|
-| `Number` or `number`   | a double-precision IEEE 754 floating point. |
-| `String` or `string`   | an immutable UTF-16 string.                 |
-| `bigint`               | integers in the arbitrary precision format. |
-| `Boolean` or `boolean` | true and false.                             |
-| `Symbol` or `symbol`   | a unique value usually used as a key.       |
-| `null`                 | equivalent to the unit type.                |
-| `undefined`            | also equivalent to the unit type.           |
-| `Object` or `object`   | similar to records.                         |
-
-## Other Important TypeScript Types
-
-| Type             | Explanation                                               |
-|------------------|-----------------------------------------------------------|
-| `unknown`        | the top type.                                             |
-| `never`          | the bottom type.                                          |
-| `object literal` | eg { property: Type }                                     |
-| `void`           | a subtype of undefined intended for use as a return type. |
-| `T[]`            | mutable arrays, also written Array                        |
-| `[T, T]`         | tuples, which are fixed-length but mutable                |
-| `(t: T) => U`    | functions                                                 |                                              
+| Type             |
+|------------------|
+| `number`         |
+| `string`         |
+| `bigint`         |
+| `boolean`        | 
+| `symbol`         |
+| `null`           |
+| `undefined`      | 
+| `object`         |
+| `unknown`        | 
+| `never`          |
+| `void`           | 
+| `T[]`            | 
+| `[T, T]`         | 
+| `(t: T) => U`    |                                               
 
 ## TypeScript Predictions
 
