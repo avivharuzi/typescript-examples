@@ -79,12 +79,12 @@ printName('Aviv');
 /**
  * undefined
  */
-const u: undefined = undefined;
+const undefinedValue: undefined = undefined;
 
 /**
  * null
  */
-const n: null = null;
+const nullValue: null = null;
 
 /**
  * never
@@ -148,6 +148,7 @@ function printFullName(fullName: { firstName: string; lastName?: string }): void
   if (fullName.lastName !== undefined) {
     console.log(fullName.lastName.toUpperCase());
   }
+
   // A safe alternative using modern JavaScript syntax with optional chaining (?.)
   console.log(fullName.lastName?.toUpperCase());
 }
