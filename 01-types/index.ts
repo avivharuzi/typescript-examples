@@ -10,7 +10,7 @@ const hasCar: boolean = true; // type: boolean
  */
 let age = 25; // type: number
 const burjKhalifaHeight = 828; // type: 828
-const burjKhalifaHighestFloor = 163; // type: number
+const burjKhalifaHighestFloor: number = 163; // type: number
 
 /**
  * string
