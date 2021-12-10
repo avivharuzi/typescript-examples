@@ -77,7 +77,7 @@ function evict(home: Home): void {
   //   name: 'Victor the Evictor',
   //   age: 42,
   // };
-  // Cannot assign to 'resident' because it is a read-only property.
+  // Cannot assign to 'resident' because it is a read-only property
   console.log(home);
 }
 
@@ -181,7 +181,7 @@ function doStuffWithReadOnlyArray(values: ReadonlyArray<string>): void {
   // We can read from 'values'...
   console.log(`The first value is ${values[0]}`);
 
-  // ...but we can't mutate 'values'.
+  // ...but we can't mutate 'values'
   // values.push('hello!'); // Property 'push' does not exist on type 'readonly string[]'
 }
 
@@ -195,7 +195,7 @@ function doSomethingTuple(pair: [string, number]): void {
   // first: string
   const first = pair[0];
 
-  // second: number;
+  // second: number
   const second = pair[1];
 
   console.log(first, second);
@@ -214,7 +214,7 @@ doSomethingTuple(['hello', 42]);
 type Either2dOr3d = [number, number, number?];
 
 function setCoordinate(coord: Either2dOr3d): void {
-  // z: number | undefined;
+  // z: number | undefined
   const [x, y, z] = coord;
 
   // coord.length: 2 | 3
