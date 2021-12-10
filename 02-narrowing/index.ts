@@ -98,7 +98,7 @@ function logValue(input: Date | string): void {
 /**
  * Assignments
  */
-// random: string | number
+  // random: string | number
 let random = Math.random() < 0.5 ? 10 : 'hello world!';
 
 random = 1;
@@ -146,8 +146,10 @@ function isFish(pet: Fish | Bird): pet is Fish {
 }
 
 let pet: Fish | Bird = {
-  swim: () => {},
-  fly: () => {},
+  swim: () => {
+  },
+  fly: () => {
+  },
 };
 
 if (isFish(pet)) {
