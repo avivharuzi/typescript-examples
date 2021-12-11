@@ -1,6 +1,3 @@
-/**
- * The typeof type operator
- */
 let helloStr = 'hello';
 
 // helloStrType: string
@@ -9,7 +6,7 @@ let helloStrType: typeof helloStr;
 function getScores() {
   return {
     low: 50,
-    high: 100
+    high: 100,
   };
 }
 

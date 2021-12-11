@@ -1,6 +1,3 @@
-/**
- * The keyof type operator
- */
 type Spider = {
   eyes: number;
   legs: number
