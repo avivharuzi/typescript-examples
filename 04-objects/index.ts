@@ -51,7 +51,7 @@ interface SomeReadOnlyType {
 }
 
 function doSomethingReadonly(some: SomeReadOnlyType): void {
-  // We can read from 'obj.prop'
+  // We can read from 'some.prop'
   console.log(`prop has the value '${some.prop}'.`);
 
   // But we can't re-assign it
@@ -73,11 +73,7 @@ function visitForBirthday(home: Home): void {
 
 function evict(home: Home): void {
   // But we can't write to the 'resident' property itself on a 'Home'
-  // home.resident = {
-  //   name: 'Victor the Evictor',
-  //   age: 42,
-  // };
-  // Cannot assign to 'resident' because it is a read-only property
+  // home.resident = { name: 'Victor the Evictor', age: 42, }; // Cannot assign to 'resident' because it is a read-only property
   console.log(home);
 }
 

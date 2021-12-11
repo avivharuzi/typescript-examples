@@ -76,7 +76,7 @@ function getProperty<Type, Key extends keyof Type>(obj: Type, key: Key) {
 // aProperty: number
 const aProperty = getProperty({ a: 1, b: 2, c: 3, d: 4 }, 'a');
 
-// getProperty(x, 'm'); // Argument of type '"m"' is not assignable to parameter of type '"a" | "b" | "c" | "d"'
+// getProperty({ a: 1, b: 2, c: 3, d: 4 }, 'm'); // Argument of type '"m"' is not assignable to parameter of type '"a" | "b" | "c" | "d"'
 
 /**
  * Using Class Types in Generics

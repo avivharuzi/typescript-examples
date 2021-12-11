@@ -42,9 +42,9 @@ class ReadonlyCls {
   }
 }
 
-const g = new ReadonlyCls();
+const readonlyCls = new ReadonlyCls();
 
-// g.name = 'also not ok'; // Cannot assign to 'name' because it is a read-only property
+// readonlyCls.name = 'also not ok'; // Cannot assign to 'name' because it is a read-only property
 
 /**
  * Constructors
@@ -240,7 +240,7 @@ const privateCls = new PrivateCls();
 // console.log(privateCls.x); // Can't access from outside the class
 
 class DerivedPrivateCls extends PrivateCls {
-  // x = 1; // Class 'Derived' incorrectly extends base class 'Base'. Property 'x' is private in type 'Base' but not in type 'Derived'
+  // x = 1; // Class 'DerivedPrivateCls' incorrectly extends base class 'PrivateCls'. Property 'x' is private in type 'PrivateCls' but not in type 'DerivedPrivateCls'
 }
 
 class DogCls2 {
@@ -298,7 +298,7 @@ class BoxCls<Type> {
   }
 }
 
-// b: Box<string>
+// boxCls: Box<string>
 const boxCls = new BoxCls('hello!');
 
 /**
@@ -338,10 +338,10 @@ interface NetworkedCls {
 const fileSystemCls: FileSystemCls = new FileRepCls('foo/bar.txt', 'foo');
 
 if (fileSystemCls.isFile()) {
-  // fileSystemCls: FileRep;
+  // fileSystemCls: FileRepCls
   console.log(fileSystemCls.content);
 } else if (fileSystemCls.isDirectory()) {
-  // fso: DirectoryCls
+  // fileSystemCls: DirectoryCls
   console.log(fileSystemCls.children);
 } else if (fileSystemCls.isNetworked()) {
   // fileSystemCls: NetworkedCls & FileSystemCls
@@ -368,7 +368,7 @@ const paramsCls = new ParamsCls(1, 2, 3);
 // paramsCls.x: number
 console.log(paramsCls.x);
 
-// console.log(paramsCls.z); // Property 'z' is private and only accessible within class 'Params'
+// console.log(paramsCls.z); // Property 'z' is private and only accessible within class 'ParamsCls'
 
 /**
  * abstract Classes and Members
