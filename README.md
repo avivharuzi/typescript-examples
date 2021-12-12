@@ -88,6 +88,8 @@ npm i tslib
 
 [TSConfig Bases Recommendation](https://github.com/tsconfig/bases)
 
+[TypeScript Types Search](https://www.typescriptlang.org/dt/search?search=)
+
 [JSON to TypeScript](https://transform.tools/json-to-typescript)
 
 # License
