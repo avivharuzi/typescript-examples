@@ -224,7 +224,7 @@ class SpecialRobotCls2 extends RobotCls2 {
 
 const specialRobotCls2 = new SpecialRobotCls2();
 specialRobotCls2.sayHi(); // OK
-// specialRobotCls2.getName(); // Property 'getName' is protected and only accessible within class 'Greeter' and its subclasses
+// specialRobotCls2.getName(); // Property 'getName' is protected and only accessible within class 'SpecialRobotCls2' and its subclasses
 
 class PrivateCls {
   private x = 0;
